@@ -1,0 +1,79 @@
+/* Reset styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Gradient (3 warna pastel) */
+body {
+    background: linear-gradient(135deg, #80ebe8, #a75cd5, #bae6c5); /* 3 gradien pastel */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Transisi pada heading dan bagian lainnya */
+h1, h2, h3 {
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: #5f6368;
+    transform: translateY(-10px);
+}
+
+/* Styling foto profil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section padding dan transisi naik */
+.section {
+    padding: 60px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Social media link styling */
+.social-links i {
+    font-size: 25px;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.social-links i:hover {
+    color: #dac62b;
+}
+
+/* Contact info styling */
+.contact-info i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #cd10ba;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #cd10ba;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
